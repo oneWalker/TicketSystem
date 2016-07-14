@@ -1,0 +1,45 @@
+<% include header.ejs %>
+<% include header1.ejs %>
+<%=title[3]%>
+<script type="text/javascript">
+    function validate_required(field,alerttxt)
+    {
+        with (field)
+        {
+            if (value==null||value=="")
+            {alert(alerttxt);return false}
+            else {return true}
+        }
+    }
+    function validate_form(thisform)
+    {
+        with (thisform)
+        {
+            if (validate_required(username,"username must be filled out!")==false)
+            {username.focus();return false}
+            if(validate_required(password,"password must be filled out!")==false)
+            {password.focus();return false}
+            if(validate_required(usergroup,"usergroup must be filled out!")==false)
+            {usergroup.focus();return false}
+            if(validate_required(realname,"realname must be filled out!")==false)
+            {realname.focus();return false}
+            }
+        }
+</script>
+<form action="/add" method="get" name="login" onsubmit="return validate_form(this)">
+    <input id="username" name="username" type="text" class="form-control" placeholder="用户名" />
+    <input id="password" name="password" type="password" class="form-control" placeholder="密码" />
+    <select name="usergroup">
+           <option value="null">--请选择--</option>
+            <option value="1">管理员</option>
+            <option value="2">普通用户</option>
+           <option value="3">电影院工作人员</option>
+    </select>
+    <input id="cinema" name="cinema" type="text" class="form-control" placeholder="电影院名字" />
+    <input id="realname" name="realname" type="text" class="form-control" placeholder="名字" />
+    <label class="checkbox">
+    </label>
+    <button id="btnSub" class="btn"onclick="add()" type="submit">添加</button>
+    <a class="btn btn-link" href="search" role="button">返回</a>
+</form>
+<% include footer.ejs %>

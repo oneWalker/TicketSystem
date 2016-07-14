@@ -1,0 +1,5 @@
+                                <%
+                                for(var i in groups){
+                                %>
+                                <option value="<%= i %>"><%= i %> </option>
+                                <% } %>

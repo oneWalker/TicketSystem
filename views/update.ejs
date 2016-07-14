@@ -1,0 +1,16 @@
+<% include header.ejs %>
+<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#change").click(function(){
+            $.get("/update?password="+$("#password").val()+"&r_password="+$("#r_password").val(),function(data){
+                alert("状态："+data);
+            });
+        });
+    });
+</script>
+<br/><input type="hidden" name="id" value="<%=title[3]%>" readonly="true">
+<input id="password" name="password" type="password"  placeholder="新密码"  />
+<br/><input id="r_password" name="r_password" type="password"  placeholder="再次输入密码"  />
+<br/><button id="change">修改</button>
+<% include footer.ejs %>

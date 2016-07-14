@@ -1,0 +1,38 @@
+<% include header.ejs %>
+<% include header1.ejs %>
+<table  class="table table-bordered table-striped dataTable" role="grid" >
+    <thead>
+    <tr role="row">
+        <th>ID</th>
+        <th>用户组</th>
+        <th>用户名</th>
+        <th>备注</th>
+        <th>创建时间</th>
+        <th>登陆次数</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%
+    for (var i in user){
+        if(user[i].usergroup===1){var g = '管理员';}
+        if(user[i].usergroup===2){var g = '普通用户';}
+        if(user[i].usergroup===3){var g = '电影院工作人员';}
+        if(user[i].sex==0){var s='男';}
+        if(user[i].sex==1){var s='女';}
+    %>
+    <tr role="row" class="color-palette">
+        <td><%= user[i].id %></td>
+        <td><%= g %></td>
+        <td><%= user[i].username %></td>
+        <td><%= user[i].realname %></td>
+        <td><%= user[i].createTime %></td>
+        <td><%= user[i].loginCount%></td>
+        <td><a class="btn-form" href="/m_update?id=<%=user[i].id%>"> 修改 </a>
+            <a href="/delet?id=<%=user[i].id%>" onclick="if(!confirm('删除后不可恢复,确定删除纪录吗?'))return false;">删除</a></td>
+    </tr>
+    <%}%>
+    </tbody>
+</table>
+
+<% include footer.ejs %>

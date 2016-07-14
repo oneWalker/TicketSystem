@@ -1,0 +1,47 @@
+<% include header.ejs %>
+<!DOCTYPE html>
+
+<form action = "filmUpdate" method = "get">
+    <input id="id" name="id"  type="hidden" placeholder="ID" value="<%=title[4]%>"/>
+    <input id="mname" name="mname" type="text" class="form-control" placeholder="电影名" value="<%=title[3]%>" readonly="true" />
+    <input id="cinema" name="cinema" type="text"  placeholder="影院名" />
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="javascripts/bootstrap-datetimepicker.js"></script>
+    <script src="javascripts/bootstrap-datetimepicker.zh-CN.js"></script>
+    <link rel="stylesheet" href="stylesheets/bootstrap-datetimepicker.css">
+    <br/>开始时间<input id="startTime" type="text" name="startTime" value=""/>
+    <script type="text/javascript">
+        $('#startTime').datetimepicker({
+            language:  'zh-CN',
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+    </script>
+    <br>结束时间<input id="endTime"  type="text" name="endTime"value=""/>
+    <script type="text/javascript">
+        $('#endTime').datetimepicker({
+            language:  'zh-CN',
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+    </script>
+    <input id="language" name="language" type="text" class="form-control" placeholder="语言" />
+    <input id="publisher" name="publisher" type="text" class="form-control" placeholder="发行商" />
+    <input id="price" name="price" type="text" class="form-control" placeholder="票价" />
+    <input id="number" name="number" type="text" class="form-control" placeholder="余量" />
+    <input id="mvalue" name="mvalue" type="text" class="form-control" placeholder="放映厅(输入数字)" />
+    <br><input type="Submit" value="修改" />
+    <td><a class="btn-form" href="filmInfo">返回</a>
+</form>
+<% include footer.ejs %>

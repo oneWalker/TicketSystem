@@ -1,0 +1,32 @@
+<% include header.ejs %>
+<script>
+    function validate_email(field,alerttxt)
+    {
+        with (field)
+        {
+            apos=value.indexOf("@")
+            dotpos=value.lastIndexOf(".")
+            if (apos<1||dotpos-apos<2)
+            {alert(alerttxt);return false}
+            else {return true}
+        }
+    }
+
+    function validate_form(thisform)
+    {
+        with (thisform)
+        {
+            if (validate_email(email,"非法邮箱地址！")==false)
+            {email.focus();return false}
+        }
+    }
+</script>
+<form action = "updateConnect" method = "get" onsubmit="return validate_form(this)">
+    <input id="id" name="id"  type="hidden" placeholder="ID" value="<%=title[3]%>"/>
+    <input id="username" name="username" type="text" class="form-control" placeholder="用户名" value="<%=title[2]%>" readonly="true" />
+    <input id="email" name="email" type="text" class="form-control" placeholder="电子邮箱" />
+    <input id="realname" name="realname" type="text" class="form-control" placeholder="真实姓名" />
+    <input id="mobile" name="mobile" type="text" class="form-control" placeholder="手机号" />
+    <br><input type="Submit" value="修改" />
+</form>
+<% include footer.ejs %>

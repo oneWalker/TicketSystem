@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/config/development/mysql.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/production/mysql.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/function/commentsinfo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/function/movieinfo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/function/orderinfo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/function/user.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/addFilm.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/comments.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/confirm.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/filmInfo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/filmUpdate.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/filmdelete.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/logout.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/order.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/register.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/updateOrder.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/users.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/addFilm.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/admin.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/comments.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/confirm.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/filmInfo.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/filmUpdate.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/filmdelete.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/header1.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/header2.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/header3.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/order.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/update.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/updateOrder.ejs" charset="UTF-8" />
+  </component>
+</project>

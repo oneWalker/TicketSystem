@@ -1,0 +1,43 @@
+<% include header.ejs %>
+<table  class="table table-bordered table-striped dataTable" role="grid" >
+    <thead>
+    <tr role="row">
+        <th>电影名</th>
+        <th>影院名</th>
+        <th>开始</th>
+        <th>结束</th>
+        <th>语言</th>
+        <th>发行商</th>
+        <th>票价</th>
+        <th>余量</th>
+        <th>放映厅</th>
+        <th>评论</th>
+        <th>订购</th>
+        <th>修改(管理员权限)</th>
+        <th>删除(管理员权限)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%
+    for (var i in user){
+    %>
+    <tr role="row" class="color-palette">
+        <td><%= user[i].mname %></td>
+        <td><%= user[i].cinema %></td>
+        <td><%= user[i].startTime %></td>
+        <td><%= user[i].endTime%></td>
+        <td><%= user[i].language %></td>
+        <td><%= user[i].publisher%></td>
+        <td><%= user[i].price %></td>
+        <td><%= user[i].number %></td>
+        <td><%= user[i].mvalue+"号放映厅" %></td>
+        <td><a class="btn-form" href="comments?name=<%=user[i].mname%>">评论</a></td>
+        <td><a href="order?id=<%=user[i].id%>" onclick="if(!confirm('是否确认订购该影片?'))return false;">订购</a></td>
+        <td><a class="btn-form" href="filmUpdate?id=<%=user[i].id%>"> 修改 </a></td>
+        <td><a href="filmdelete?id=<%=user[i].id%>" onclick="if(!confirm('删除后不可恢复,确定删除纪录吗?'))return false;">删除</a></td>
+    </tr>
+    <%}%>
+    </tbody>
+</table>
+
+<% include footer.ejs %>

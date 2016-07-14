@@ -1,0 +1,40 @@
+<% include header.ejs %>
+<table  class="table table-bordered table-striped dataTable" role="grid" >
+    <thead>
+    <tr role="row">
+        <th>序号</th>
+        <th>订票用户</th>
+        <th>电影名字</th>
+        <th>电影院名字</th>
+        <th>放映时间</th>
+        <th>价格</th>
+        <th>放映厅</th>
+        <th>消费状态</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%
+    for (var i in user){
+        var j=Number(i)+1;
+        if(user[i].value===0){ s = "订单未确认"; }
+        if(user[i].value===1){ s = "订单已经确认"; }
+        if(user[i].value===2){ s = "消费完成"; }
+    %>
+    <tr role="row" class="color-palette">
+        <td><%= j %></td>
+        <td><%= user[i].username %></td>
+        <td><%= user[i].mname %></td>
+        <td><%= user[i].cinema %></td>
+        <td><%= user[i].startTime %></td>
+        <td><%= user[i].price %></td>
+        <td><%= user[i].mvalue%></td>
+        <td><%= s %></td>
+        <td><a href="updateOrder?id=<%=user[i].id%>&value=0" onclick="if(!confirm('是否确认购票状态'))return false;">订单未成功</a></td>
+        <td><a href="updateOrder?id=<%=user[i].id%>&value=1" onclick="if(!confirm('是否确认购票状态'))return false;">激活</a></td>
+        <td><a href="updateOrder?id=<%=user[i].id%>&value=2" onclick="if(!confirm('是否确认购票状态'))return false;">已经消费</a></td>
+    </tr>
+    <%}%>
+    </tbody>
+</table>
+<% include footer.ejs %>

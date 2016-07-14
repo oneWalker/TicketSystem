@@ -1,0 +1,18 @@
+<% include header.ejs %>
+<% include header1.ejs %>
+<!DOCTYPE html>
+<form action = "m_update" method = "get">
+    <input id="id" name="id"  type="hidden" placeholder="ID" value="<%=title[4]%>"/>
+    <input id="username" name="username" type="text" class="form-control" placeholder="用户名" value="<%=title[3]%>" readonly="true" />
+    <select name="usergroup">
+        <option value="null">--请选择--</option>
+        <option value="1">管理员</option>
+        <option value="2">普通用户</option>
+        <option value="3">电影院工作人员</option>
+    </select>
+    <input id="cinema" name="cinema" type="text" class="form-control" placeholder="电影院名字" />
+    <input id="realname" name="realname" type="text" class="form-control" placeholder="真实姓名" />
+    <br><input type="Submit" value="修改" />
+    <td><a class="btn-form" href="search">返回</a>
+</form>
+<% include footer.ejs %>

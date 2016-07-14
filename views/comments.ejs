@@ -1,0 +1,25 @@
+<% include header.ejs %>
+<table  class="table table-bordered table-striped dataTable" role="grid" >
+    <form action = "comments" method = "get">
+    <input id="name" name="name" type="text" placeholder="电影名" value="<%=title[3]%>" readonly="true" />
+    <thead>
+    <tr role="row">
+        <th>用户名</th>
+        <th>评论</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%
+    for (var i in user){
+    %>
+    <tr role="row" class="color-palette">
+        <td><%= user[i].username %></td>
+        <td><%= user[i].comments %></td>
+    <%}%>
+    </tbody>
+</table>
+    <br/>输入文本内容
+    <br/><input id="comments" type="text" name="comments"/>
+    <br><input onclick="showdiv('内容提交中...');" type="Submit" value="提交评论" />
+</form>
+<% include footer.ejs %>
