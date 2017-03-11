@@ -10,4 +10,4 @@ The UI design of project refers from https://almsaeedstudio.com/themes/AdminLTE/
 
 Due to the lack of UI skills, the shortage of the web don't hidden the extra functions.Of course,if you don't have the functions,you can't use them.
 
-If you have better solution ,advice and any problems about the web project, welcome to contact with me by email.
+If you have better solution ,advice and any problems about the web project, welcome to contact with me by my email briankenliu@gmail.com or bkunliu@163.com.
