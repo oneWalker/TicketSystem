@@ -53,6 +53,29 @@ desired effect
 |---------------------------------------------------------|
 -->
 <body class="hold-transition skin-blue sidebar-mini">
+<script class="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script>
+ function fn(){
+     var id= <%=b%>;
+     if(id==1)
+     {
+
+     }
+     if(id == 2){
+         document.getElementById("userManage").style.display = "none";
+         document.getElementById("addFilm").style.display="none";
+         document.getElementById("confirm").style.display="none";
+         document.getElementById('updateOrder').style.display="none";
+     }
+     if(id == 3)
+     {
+         document.getElementById("userManage").style.display = "none";
+     }
+ };
+    $.(document).ready(function(){
+        fn();
+    });
+</script>
 <div class="wrapper">
 
     <!-- Main Header -->
@@ -146,7 +169,7 @@ desired effect
                     </ul>
                 </li>
                 <li class="treeview">
-                    <a href="#"><i class="fa fa-link"></i> <span>用户信息管理(管理员权限)</span> <i class="fa fa-angle-left pull-right"></i></a>
+                    <a id="userManage" href="#"><i class="fa fa-link"></i> <span>用户信息管理(管理员权限)</span> <i class="fa fa-angle-left pull-right"></i></a>
                     <ul class="treeview-menu">
                         <li><a href="add">添加新用户</a></li>
                         <li><a href="search">用户查询</a></li>
@@ -155,16 +178,16 @@ desired effect
                 <li class="treeview">
                     <a href="#"><i class="fa fa-link"></i> <span>佳片管理</span> <i class="fa fa-angle-left pull-right"></i></a>
                     <ul class="treeview-menu">
-                        <li><a href="filmInfo">电影信息查询</a></li>
-                        <li><a href="addFilm">增加电影(顾客无此权限)</a></li>
+                        <li><a id="filmInfo" href="filmInfo">电影信息查询</a></li>
+                        <li><a id="addFilm" href="addFilm">增加电影(顾客无此权限)</a></li>
                     </ul>
                 </li>
                 <li class="treeview">
                     <a href="#"><i class="fa fa-link"></i> <span>票务系统</span> <i class="fa fa-angle-left pull-right"></i></a>
                     <ul class="treeview-menu">
-                        <li><a href="order">个人电影票订购状态</a></li>
-                        <li><a href="confirm">确认订票信息(顾客无此权限)</a></li>
-                        <li><a href="updateOrder">修改用户订票信息(顾客无此权限)</a></li>
+                        <li><a id ="oredr" href="order">个人电影票订购状态</a></li>
+                        <li><a id="confirm" href="confirm">确认订票信息(顾客无此权限)</a></li>
+                        <li><a id="updateOrder"href="updateOrder">修改用户订票信息(顾客无此权限)</a></li>
                     </ul>
                 </li>
             </ul>
