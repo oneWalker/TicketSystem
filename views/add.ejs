@@ -1,5 +1,20 @@
-<% include header.ejs %>
-<% include header1.ejs %>
+<% include headerAdmin.ejs %>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            <%=title[0]%>
+            <small><%=title[1]%></small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> 用户信息管理</a></li>
+            <li class="active"><%=title[0]%></li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
 <%=title[3]%>
 <script type="text/javascript">
     function validate_required(field,alerttxt)

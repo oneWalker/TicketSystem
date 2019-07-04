@@ -38,7 +38,7 @@ router.get('/',function(req,res,cb){
                         res.render('customer', {title: [title1[1], title2[1], req.session.username]});
                     }
                     else if (result.usergroup === 3) {
-                        res.render('filmer', {title: [title1[2], title2[2], req.session.username]});
+                        res.render('worker', {title: [title1[2], title2[2], req.session.username]});
                     }
                 });
             }

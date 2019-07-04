@@ -1,6 +1,5 @@
 # TicketSystem
-
-Without the knowledge of MVC,the location of files in the project looks a little mess.
+## Introduce and Background
 
 There are 3 different users in the project ,which is admins ,cinemas worker and customers.
 
@@ -8,6 +7,12 @@ Logining on the system with different users,we have different functions.
 
 The UI design of project refers from https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html.
 
-Due to the lack of UI skills, the shortage of the web don't hidden the extra functions.Of course,if you don't have the functions,you can't use them.
+## How to Run it?
+You can download the programming and set app.js as the main file.
+the sql, named dbms.sql is the whole database froms.
+## Not good Parts
++ Without the knowledge of MVC,the location of files in the project looks a little mess.
++ Due to the lack of UI skills, the shortage of the web don't hidden the extra functions.Of course,if you don't have the functions,you can't use them.
 
-If you have better solution ,advice and any problems about the web project, welcome to contact with me by my email briankenliu@gmail.com or lewkun@foxmail.com.
+## The last
+If you have any better ways to make it better, please no hesitate to give me the advice.git
