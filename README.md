@@ -8,7 +8,8 @@ Logining on the system with different users,we have different functions.
 The UI design of project refers from https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html.
 
 ## How to Run it?
-You can download the programming project and set app.js as the main file.
+You can download the programming project and set app.js as the main entry file.
+such as: node app.js
 the sql, named dbms.sql is the whole database froms.
 ## Not good Parts
 + Without the knowledge of MVC,the location of files in the project looks a little mess.
