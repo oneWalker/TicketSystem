@@ -8,7 +8,8 @@ Logining on the system with different users,we have different functions.
 The UI design of project refers from https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html.
 
 ## How to Run it?
-You can download the programming and set app.js as the main file.
+You can download the programming project and set app.js as the main entry file.
+such as: node app.js
 the sql, named dbms.sql is the whole database froms.
 ```bash
 > npm install
@@ -20,4 +21,10 @@ or node app.js
 + Due to the lack of UI skills, the shortage of the web don't hidden the extra functions.Of course,if you don't have the functions,you can't use them.
 
 ## The last
+<<<<<<< HEAD
 If you have any better ways to make it better, please no hesitate to give me the advice.
+||||||| d6aa6c5
+If you have any better ways to make it better, please no hesitate to give me the advice.git
+=======
+If you have any better ways to make it better, please no hesitate to give me the advice.
+>>>>>>> 341c8aa907a07069812c898bbcf4cf9c34973fb9
