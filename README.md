@@ -21,10 +21,4 @@ or node app.js
 + Due to the lack of UI skills, the shortage of the web don't hidden the extra functions.Of course,if you don't have the functions,you can't use them.
 
 ## The last
-<<<<<<< HEAD
-If you have any better ways to make it better, please no hesitate to give me the advice.
-||||||| d6aa6c5
-If you have any better ways to make it better, please no hesitate to give me the advice.git
-=======
-If you have any better ways to make it better, please no hesitate to give me the advice.
->>>>>>> 341c8aa907a07069812c898bbcf4cf9c34973fb9
+If you have any better ways to make it better, please no hesitate to edit and merge it.
